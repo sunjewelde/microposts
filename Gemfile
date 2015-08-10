@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-
+#added for heroku deploy
+ruby '2.2.1'
+gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
 gem 'sqlite3', group: :development
 # 本番ではpostgressを使用する
 gem 'pg', group: :production
